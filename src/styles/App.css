@@ -1,0 +1,566 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*********************************************************************************/
+/* Begin AboutUs.css                                                             */
+/*********************************************************************************/
+.zeroed-in{
+  height: auto;
+  width: 25%;
+  margin-top: 2%;
+  margin-left: -15%;
+  float: left;
+}
+.Umarex-USA{
+  width: 40%;
+  margin-left: 35%;
+}
+.Umarex-USA p{
+  border-top: 2px solid red;
+  text-align: left;
+  
+}
+.Umarex-USA p,h1{
+  margin-left: 15%;
+}
+.umarex-story{
+  width: 2%;
+  margin-left: 15%;
+  z-index: -1;
+}
+.AboutUsContainer{
+  background-image: url("../assets/bg.jpg");
+}
+/*********************************************************************************/
+/* Begin BrandNav.css                                                            */
+/*********************************************************************************/
+.BrandNavContainer{
+  background-color: #363636;
+  margin-top: 5%;
+  height: auto;
+  max-width: 100%;
+  margin: 5% 0;
+  padding: .005% 10%;
+}
+.BrandNav ul{
+  display: flex;
+  list-style: none;
+  gap: 10%;
+  justify-content: center;
+}
+.BrandNav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+/*********************************************************************************/
+/* Begin Carousel.css                                                            */
+/*********************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.flex-container {
+	position: relative;
+	height: 75vh;
+	width: 100%;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	overflow: hidden;
+    margin-top: -5%;
+    margin-bottom: 5%;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+.flex-title {
+	color: #f1f1f1;
+	position: relative;
+	font-size: 5vw;
+	margin: auto;
+	text-align: center;
+	transform: rotate(90deg);
+	top: 25%;
+	@media screen and (max-width: 768px) {
+		transform: rotate(0deg) !important;
+	}
+}
+.flex-about {
+	opacity: 0;
+	color: #f1f1f1;
+	position: relative;
+	width: 70%;
+	font-size: 2vw;
+	padding: 5%;
+	top: 20%;
+	border: 2px solid #f1f1f1;
+	border-radius: 10px;
+	line-height: 1.3;
+	margin: auto;
+	text-align: left;
+	transform: rotate(0deg);
+	@media screen and (max-width: 768px) {
+		padding: 0%;
+		border: 0px solid #f1f1f1;
+	}
+}
+
+
+.flex-slide {
+	-webkit-flex: 1;  /* Safari 6.1+ */
+	-ms-flex: 1;  /* IE 10 */    
+	flex: 1;
+	cursor: pointer;
+	@media screen and (max-width: 768px) {
+		overflow: auto;
+		overflow-x: hidden;
+	}
+}
+.flex-slide p {
+	@media screen and (max-width: 768px) {
+		font-size: 2em;
+	}
+} 
+.flex-slide ul li {
+	@media screen and (max-width: 768px) {
+		font-size: 2em;
+	}
+} 
+.flex-slide:hover {
+	-webkit-flex-grow: 3;
+	flex-grow: 3;
+
+}
+
+.home {
+    margin-left: -4.2%;
+	background: url("../assets/Umarex\ Slider.jpg") no-repeat;
+	background-size: cover;
+    background-position: CENTER CENTER;
+	-webkit-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	-moz-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	-ms-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+	transition:all 0.5s;
+	@media screen and (min-width: 768px) {
+		animation: aboutFlexSlide $defaultSeconds 1;
+		animation-delay: 0s;
+	}
+}
+.home:hover{
+    background: linear-gradient(black,black), url("../assets/Umarex\ Slider.jpg") no-repeat;
+    background-blend-mode: saturation;
+	background-size: cover;
+    background-position: CENTER CENTER;
+}
+.home:hover .airguns{
+    display: block;
+    max-width: 40%;
+    margin-left: 35%;
+    margin-top: 45%;
+    
+}
+.airguns{
+    display: none;
+}
+@keyframes aboutFlexSlide {
+	0% {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+	50% {
+		-webkit-flex-grow: 3;
+		flex-grow: 3;
+	}
+	100% {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+}
+
+.flex-title-home {
+	@media screen and (min-width: 768px) {
+		transform: rotate(90deg);
+		top: -15%;
+		animation: aboutFlexSlide $defaultSeconds 1;
+		animation-delay: 0s;
+	}
+}
+
+
+
+@keyframes homeFlextitle {
+	0% {
+		transform: rotate(90deg);
+		top: 15%;
+	}
+	50% {
+		transform: rotate(0deg);
+		top: 15%;
+	}
+	100% {
+		transform: rotate(90deg);
+		top: 15%;
+	}
+}
+
+.flex-about-home {
+	opacity: 0;
+	@media screen and (min-width: 768px) {
+		animation: aboutFlexSlide $defaultSeconds 1;
+		animation-delay: 0s;
+	}
+}
+
+@keyframes flexAboutHome {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+.about {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Axeon-Slider.jpg");
+	background-size: cover;
+    background-position: center;
+    transform: skew(-20deg);
+}
+.about:hover{
+    background: linear-gradient(black,black), url("../assets/Axeon-Slider.jpg") no-repeat;
+    background-blend-mode: saturation;
+	background-size: cover;
+    background-position: CENTER CENTER;
+}
+.contact {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/REKT\ Slider.jpg");
+	background-size: cover;
+    background-position: center;
+    transform: skew(-20deg);
+}
+.contact:hover{
+    background: linear-gradient(black,black), url("../assets/REKT\ Slider.jpg") no-repeat;
+    background-blend-mode: saturation;
+	background-size: cover;
+    background-position: CENTER CENTER;
+}
+.work {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/EF\ Shield\ on\ Wall.jpg");
+	background-size: cover;
+    background-position: center;
+    transform: skew(-20deg);
+}
+.work:hover{
+    background: linear-gradient(black,black), url("../assets/EF\ Shield\ on\ Wall.jpg") no-repeat;
+    background-blend-mode: saturation;
+	background-size: cover;
+    background-position: CENTER CENTER;
+}
+.fifth{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/P2P\ SLider.jpg");
+	background-size: cover;
+    background-position: center;
+    transform: skew(-20deg);
+}
+.fifth:hover{
+    background: linear-gradient(black,black), url("../assets/P2P\ SLider.jpg") no-repeat;
+    background-blend-mode: saturation;
+	background-size: cover;
+    background-position: CENTER CENTER;
+}
+.sixth{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/T4E-Swat.jpg");
+	background-size: cover;
+    background-position:center;
+    transform: skew(-20deg);
+    margin-right: -4%;
+}
+.sixth:hover{
+    background: linear-gradient(black,black), url("../assets/T4E-Swat.jpg") no-repeat;
+    background-blend-mode: saturation;
+	background-size: cover;
+    background-position: CENTER CENTER;
+}
+
+
+
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@include elHover {
+  transform: translate3d(0,0,0);
+  
+  &:before {
+    transform: translate3d(0,0,0);
+  }
+}
+}
+}
+
+@for $i from 0 to $numOfEls {
+&:nth-child(#{$i + 1}) {
+$x: (100% + $elMrgRel) * $i;
+transform: translate3d($x,0,0);
+transform-origin: $x + 50% 50%;
+
+@include contElActive {
+  
+  &:not(.s--active) {
+    transform: scale(0.5) translate3d($x,0,0);
+    opacity: 0;
+    transition: transform $fadeoutAT, opacity $fadeoutAT;
+  }
+}
+
+.el__inner {
+  transition-delay: $initDelayStep * $i;
+}
+
+.el__bg {
+  transform: translate3d($elW * $i * -1,0,0);
+
+  &:before {
+    transition-delay: 0.1s * $i;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-#{$i + 3}.jpg');
+  }
+}
+}
+}
+
+&:hover {
+
+.el__bg:after {
+opacity: 0;
+}
+}
+
+&.s--active {
+z-index: 1;
+width: 100%;
+transform: translate3d(0,0,0);
+transition: transform $moveAT, width $expandAT $moveAT + $expandDelay, z-index 0s;
+
+.el__bg {
+transform: translate3d(0,0,0);
+transition: transform $moveAT;
+
+&:before {
+  transition-delay: $moveAT;
+  transform: scale(1.1);
+}
+}
+}
+}
+/*********************************************************************************/
+/* Begin Footer.css                                                              */
+/*********************************************************************************/
+.footer-container{
+  background-color: #ed1b24;
+  padding-bottom: 3%;
+}
+.email,.phone,.loc{
+  max-width: 3%;
+  float: left;
+  margin-right: 2%;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.location{
+  margin-left: 30%;
+}
+.phoneNum{
+  margin-left: 30%;
+}
+.emailAddress{
+  margin-left: 30%;
+}
+.building{
+  margin-left: 30%;
+  margin-top: -100%;
+  transform: scale(1.5)
+}   
+.h1{
+  width: 13%;
+  margin-left: 30%;    
+  padding-top: 2%;
+  color: white;
+  border-bottom: 2px solid white;
+}
+/*********************************************************************************/
+/* Begin Timeline.css                                                            */
+/*********************************************************************************/
+
+.timeline-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px 0;
+  grid-auto-rows: minmax(50px, auto);
+  margin-left: 15%;
+  margin-top: -30%;
+}
+.one{
+  grid-column: 1;
+  grid-row: 1;
+}
+.two{
+  grid-column: 1;
+  grid-row: 2;
+}
+.three{
+  grid-column: 1;
+  grid-row: 3;
+}
+.four{
+  grid-column: 1;
+  grid-row: 4;
+}
+.five{
+  grid-column: 2;
+  grid-row: 1;
+}
+.six{
+  grid-column: 2;
+  grid-row: 2;
+}
+.seven{
+  grid-column: 2;
+  grid-row: 3;
+}
+.eight{
+  grid-column: 2;
+  grid-row: 4;
+}
+.nine{
+  grid-column: 2;
+  grid-row: 5;
+}
+.nine h1{
+  color: red;
+}
+.oneImg{
+  max-width: 20%;
+  margin-left: 45%;
+  margin-bottom: -8%;
+}
+.threeImg{
+  max-width: 35%;
+  margin-left: 30%;
+  margin-bottom: -10%;
+}
+.eightImg{
+  max-width: 25%;
+  margin-left: 40%;
+  margin-bottom: -9.2%;
+  margin-top: -10%;
+}
+/*********************************************************************************/
+/* Begin TimelinePiece.css                                                       */
+/*********************************************************************************/
+.text{
+  border-top: 2px solid red;
+  width: 61%;
+  margin-top: -5%;
+}
+.year{
+  margin-left: 0%;
+  color: grey;
+}
+.card{
+  margin-left: 10%;
+}
+/*********************************************************************************/
+/* Begin TopNav.css                                                              */
+/*********************************************************************************/
+.TopNavContainer{
+  background-color: #ed1b24;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  z-index: 1;
+}
+.TopNav ul{
+  display: flex;
+      list-style: none;
+      gap: 15vw;
+}
+.TopNav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  width: 20%;
+}
+.TopNav ul li a:hover{
+  color: black;
+}
