@@ -360,7 +360,6 @@ $contentFadeinAT: 0.5s;
       }
 
       .el__bg {
-        transform: translate3d($elW * $i * -1,0,0);
 
         &:before {
           transition-delay: 0.1s * $i;
@@ -411,16 +410,4 @@ $contentFadeinAT: 0.5s;
     left: auto;
     right: 5px;
   }
-}
-.ux{
-  max-width: 20%;
-  height: auto;
-  margin-left: 75%;
-}
-.airgunStore{
-  background-color: red;
-  border: none;
-  color: white;
-  margin-top: 3%;
-  padding: 1% 2%;
 }

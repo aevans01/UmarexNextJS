@@ -1,6 +1,9 @@
 import React from "react";
 import ux from "../assets/UX Airguns Logo Mark_3Color.png";
-
+import fb from "../assets/facebook.png";
+import ig from "../assets/instagram.png";
+import tw from "../assets/twitter.png";
+import yt from "../assets/youtube.png";
 function Carousel() {
 	return (
 		<div class="cont s--inactive">
@@ -14,7 +17,15 @@ function Carousel() {
 							</div>
 							<div class="el__content">
 								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
+								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.
+									<p><button className="airgunStore">Umarex Airgun Store</button></p>
+									<p>
+										<img className="fb" src={fb} />
+										<img className="ig" src={ig} />
+										<img className="tw" src={tw} />
+										<img className="yt" src={yt} />
+									</p>
+								</div>
 								<div class="el__close-btn"></div>
 							</div>
 						</div>
@@ -29,7 +40,15 @@ function Carousel() {
 							</div>
 							<div class="el__content">
 								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
+								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.
+									<p><button className="airgunStore">Umarex Airgun Store</button></p>
+									<p>
+										<img className="fb" src={fb} />
+										<img className="ig" src={ig} />
+										<img className="tw" src={tw} />
+										<img className="yt" src={yt} />
+									</p>
+								</div>
 								<div class="el__close-btn"></div>
 							</div>
 						</div>
@@ -44,7 +63,15 @@ function Carousel() {
 							</div>
 							<div class="el__content">
 								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
+								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.
+									<p><button className="airgunStore">Umarex Airgun Store</button></p>
+									<p>
+										<img className="fb" src={fb} />
+										<img className="ig" src={ig} />
+										<img className="tw" src={tw} />
+										<img className="yt" src={yt} />
+									</p>
+								</div>
 								<div class="el__close-btn"></div>
 							</div>
 						</div>
@@ -59,7 +86,15 @@ function Carousel() {
 							</div>
 							<div class="el__content">
 								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
+								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.
+									<p><button className="airgunStore">Umarex Airgun Store</button></p>
+									<p>
+										<img className="fb" src={fb} />
+										<img className="ig" src={ig} />
+										<img className="tw" src={tw} />
+										<img className="yt" src={yt} />
+									</p>
+								</div>
 								<div class="el__close-btn"></div>
 							</div>
 						</div>
@@ -74,7 +109,15 @@ function Carousel() {
 							</div>
 							<div class="el__content">
 								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
+								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.
+									<p><button className="airgunStore">Umarex Airgun Store</button></p>
+									<p>
+										<img className="fb" src={fb} />
+										<img className="ig" src={ig} />
+										<img className="tw" src={tw} />
+										<img className="yt" src={yt} />
+									</p>
+								</div>
 								<div class="el__close-btn"></div>
 							</div>
 						</div>
@@ -89,7 +132,15 @@ function Carousel() {
 							</div>
 							<div class="el__content">
 								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
+								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.
+									<p><button className="airgunStore">Umarex Airgun Store</button></p>
+									<p>
+										<img className="fb" src={fb} />
+										<img className="ig" src={ig} />
+										<img className="tw" src={tw} />
+										<img className="yt" src={yt} />
+									</p>
+								</div>
 								<div class="el__close-btn"></div>
 							</div>
 						</div>
