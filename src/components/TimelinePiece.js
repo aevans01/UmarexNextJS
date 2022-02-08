@@ -1,14 +1,18 @@
 import React from "react";
-import "../styles/TimelinePiece.css"
+import { Card, Button } from 'react-bootstrap';
+function TimelinePiece({ year, optionalImage, optionalImage2, text, className1, className2 }) {
+    return (
+        <Card style={{ width: '18rem' }}>
+            <Card.Img className={className1} variant="top" src={optionalImage} />
+            <Card.Body >
+                <Card.Title>{year}</Card.Title>
+                <Card.Img className={className2} variant="bottom" src={optionalImage2} />
+                <Card.Text className="cardText">
+                    {text}
+                </Card.Text>
+            </Card.Body>
+        </Card >
 
-function TimelinePiece({year,optionalImage,text}){
-    return(
-        <div className="card">
-            <h1 className="year">{year}</h1>
-            <img className="image"{...optionalImage} />
-            <p className="text">{text}</p>
-        </div>
-        
     )
 }
 

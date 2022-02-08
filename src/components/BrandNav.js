@@ -1,20 +1,23 @@
 import React from "react";
-import '../styles/BrandNav.css';
-function BrandNav(){
-    return(
-        <div className="BrandNavContainer">
-            <div className="BrandNav">
-                <ul>
-                    <li><a href="">ALL BRANDS</a></li>
-                    <li><a href="">UMAREX</a></li>
-                    <li><a href="">AXEON OPTICS</a></li>
-                    <li><a href="">ELITE FORCE</a></li>
-                    <li><a href="">REKT</a></li>
-                    <li><a href="">P2P</a></li>
-                    <li><a href="">T4E</a></li>
-                </ul>
-            </div>
-        </div>
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+function BrandNav() {
+    return (
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Container>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="me-auto ">
+                        <Nav.Link href="#features">ALL BRANDS</Nav.Link>
+                        <Nav.Link href="#pricing">UMAREX</Nav.Link>
+                        <Nav.Link href="#pricing">AXEON OPTICS</Nav.Link>
+                        <Nav.Link href="#pricing">ELITE FORCE</Nav.Link>
+                        <Nav.Link href="#pricing">REKT</Nav.Link>
+                        <Nav.Link href="#pricing">P2P</Nav.Link>
+                        <Nav.Link href="#pricing">T4E</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 

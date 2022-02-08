@@ -1,4 +1,4 @@
-.App {
+ .App {
   text-align: center;
 }
 
@@ -36,9 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.AppContainer{
+  background-image: url("../assets/bg.jpg");
+  background-size: contain;
+}
+.cardText{
+  border-top: 2px solid red;
+  margin-top: -10%;
+}
 /*********************************************************************************/
 /* Begin AboutUs.css                                                             */
 /*********************************************************************************/
+.AboutUsContainer{
+  margin-left: 25%;
+} 
 .zeroed-in{
   height: auto;
   width: 25%;
@@ -47,8 +58,9 @@
   float: left;
 }
 .Umarex-USA{
-  width: 40%;
-  margin-left: 35%;
+  width: 50%;
+  margin-left: 15%;
+  margin-bottom: -10%;
 }
 .Umarex-USA p{
   border-top: 2px solid red;
@@ -59,22 +71,30 @@
   margin-left: 15%;
 }
 .umarex-story{
-  width: 2%;
-  margin-left: 15%;
+  width: 5%;
+  margin-left: -5%;
+  margin-top: -140%;
+  margin-bottom: 5%;
   z-index: -1;
 }
 .AboutUsContainer{
-  background-image: url("../assets/bg.jpg");
+  max-width: 1170px;
 }
+@media (max-width: 768px){
+	.Umarex-USA{
+  	width: 80%;
+    margin-left: 15%;
+  }
+} 
 /*********************************************************************************/
 /* Begin BrandNav.css                                                            */
 /*********************************************************************************/
-.BrandNavContainer{
+/* .BrandNavContainer{
   background-color: #363636;
-  margin-top: 5%;
   height: auto;
-  max-width: 100%;
-  margin: 5% 0;
+  max-width: 1170px;
+  margin-bottom: 7%;
+  margin-top: -1%;
   padding: .005% 10%;
 }
 .BrandNav ul{
@@ -88,19 +108,421 @@
   text-decoration: none;
   font-size: 1.3em;
 }
+@media (max-width: 768px){
+	#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: black;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: black;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -220px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ed1b24;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  color: white;
+}
+#menu li:hover{
+  color: black;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+} */
+/*********************************************************************************/
+/* Begin Timeline.css                                                            */
+/*********************************************************************************/
+
+ .timeline-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px 0;
+  grid-auto-rows: minmax(50px, auto);
+  margin: auto;
+  margin-top: 20%;
+}
+.one{
+  grid-column: 1;
+  grid-row: 1;
+}
+.two{
+  grid-column: 1;
+  grid-row: 2;
+}
+.three{
+  grid-column: 1;
+  grid-row: 3;
+}
+.four{
+  grid-column: 1;
+  grid-row: 4;
+}
+.five{
+  grid-column: 2;
+  grid-row: 1;
+}
+.six{
+  grid-column: 2;
+  grid-row: 2;
+}
+.seven{
+  grid-column: 2;
+  grid-row: 3;
+}
+.eight{
+  grid-column: 2;
+  grid-row: 4;
+}
+.nine{
+  grid-column: 2;
+  grid-row: 5;
+}
+.nine h1{
+  color: red;
+}
+.oneImg{
+  max-width: 50%;
+  margin-left: 55%;
+  margin-top: -25%;
+}
+.oneImgBg{
+  width: 40%;
+  opacity: 15%;
+  margin-bottom: -17%;
+}
+.threeImg{
+  max-width: 75%;
+  margin-left: 30%;
+  margin-top: -25%;
+}
+.eightImg{
+  max-width: 24%;
+  margin-left: 70%;
+  margin-top: -30.5%;
+}
+@media (max-width: 768px){
+	.timeline-grid{
+  	display: block;
+  }
+  .oneImg{
+  	margin-bottom: -15%;
+  }
+  .threeImg{
+  	margin-left: 40%;
+  	margin-bottom: -20%;
+  }
+  .eightImg{
+  	margin-bottom: -20%;
+    margin-left: 40%;
+  }
+}
+/*********************************************************************************/
+/* Begin TimelinePiece.css                                                       */
+/*********************************************************************************/
+ .text{
+  border-top: 2px solid red;
+  width: 61%;
+  margin-top: -10%;
+}
+.year{
+  margin-left: 0%;
+  color: grey;
+}
+.card{
+  margin-left: 10%;
+} 
+/*********************************************************************************/
+/* Begin TopNav.css                                                              */
+/*********************************************************************************/
+
+
+/*****************************************************/
+/* @media (max-width: 768px){
+	.TopNav ul{
+    display: none;
+  }
+  #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: white;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -10% 0 0 -220px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ed1b24;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+}  */
+/*********************************************************************************/
+/* Begin Footer.css                                                              */
+/*********************************************************************************/
+
+.email,.phone,.loc{
+  max-width: 3%;
+  position: relative;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-right: 2%;
+}
+.text-white{
+  margin-top: 1%;
+}
+.col-md-6 h5{
+  border-bottom: 2px solid white;
+  width: 20%;
+  margin-left: 40%;
+}
+.col-md-6{
+  margin-left: 10%;
+}
+.phone{
+  margin-left: 9%;
+}
+.email{
+  margin-left: 1%;
+}
+
+.building{
+  transform: scale(150%);
+}
+
 /*********************************************************************************/
 /* Begin Carousel.css                                                            */
 /*********************************************************************************/
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-.flex-container {
+/*.flex-container {
 	position: relative;
 	height: 75vh;
-	width: 100%;
-	display: -webkit-flex; /* Safari */
+	display: -webkit-flex;
 	display: flex;
 	overflow: hidden;
-    margin-top: -5%;
+    margin-top: 0%;
     margin-bottom: 5%;
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
@@ -140,8 +562,8 @@
 
 
 .flex-slide {
-	-webkit-flex: 1;  /* Safari 6.1+ */
-	-ms-flex: 1;  /* IE 10 */    
+	-webkit-flex: 1;
+	-ms-flex: 1;  
 	flex: 1;
 	cursor: pointer;
 	@media screen and (max-width: 768px) {
@@ -166,15 +588,11 @@
 }
 
 .home {
-    margin-left: -4.2%;
 	background: url("../assets/Umarex\ Slider.jpg") no-repeat;
 	background-size: cover;
-    background-position: CENTER CENTER;
-	-webkit-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
-	-moz-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
-	-ms-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
-	transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
+  padding-left: -10%;
 	transition:all 0.5s;
+  clip-path: polygon(-1000% 0%, 100% -0%, 100% 100%, 0% 100%);
 	@media screen and (min-width: 768px) {
 		animation: aboutFlexSlide $defaultSeconds 1;
 		animation-delay: 0s;
@@ -183,7 +601,7 @@
 .home:hover{
     background: linear-gradient(black,black), url("../assets/Umarex\ Slider.jpg") no-repeat;
     background-blend-mode: saturation;
-	background-size: cover;
+	  background-size: cover;
     background-position: CENTER CENTER;
 }
 .home:hover .airguns{
@@ -263,7 +681,6 @@
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Axeon-Slider.jpg");
 	background-size: cover;
     background-position: center;
-    transform: skew(-20deg);
 }
 .about:hover{
     background: linear-gradient(black,black), url("../assets/Axeon-Slider.jpg") no-repeat;
@@ -275,7 +692,6 @@
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/REKT\ Slider.jpg");
 	background-size: cover;
     background-position: center;
-    transform: skew(-20deg);
 }
 .contact:hover{
     background: linear-gradient(black,black), url("../assets/REKT\ Slider.jpg") no-repeat;
@@ -287,7 +703,6 @@
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/EF\ Shield\ on\ Wall.jpg");
 	background-size: cover;
     background-position: center;
-    transform: skew(-20deg);
 }
 .work:hover{
     background: linear-gradient(black,black), url("../assets/EF\ Shield\ on\ Wall.jpg") no-repeat;
@@ -299,7 +714,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/P2P\ SLider.jpg");
 	background-size: cover;
     background-position: center;
-    transform: skew(-20deg);
 }
 .fifth:hover{
     background: linear-gradient(black,black), url("../assets/P2P\ SLider.jpg") no-repeat;
@@ -311,8 +725,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/T4E-Swat.jpg");
 	background-size: cover;
     background-position:center;
-    transform: skew(-20deg);
-    margin-right: -4%;
 }
 .sixth:hover{
     background: linear-gradient(black,black), url("../assets/T4E-Swat.jpg") no-repeat;
@@ -320,9 +732,6 @@
 	background-size: cover;
     background-position: CENTER CENTER;
 }
-
-
-
 
 .cube2 {
   -webkit-animation-delay: -0.9s;
@@ -355,212 +764,4 @@
     -webkit-transform: rotate(-360deg);
   }
 }
-
-@include elHover {
-  transform: translate3d(0,0,0);
-  
-  &:before {
-    transform: translate3d(0,0,0);
-  }
-}
-}
-}
-
-@for $i from 0 to $numOfEls {
-&:nth-child(#{$i + 1}) {
-$x: (100% + $elMrgRel) * $i;
-transform: translate3d($x,0,0);
-transform-origin: $x + 50% 50%;
-
-@include contElActive {
-  
-  &:not(.s--active) {
-    transform: scale(0.5) translate3d($x,0,0);
-    opacity: 0;
-    transition: transform $fadeoutAT, opacity $fadeoutAT;
-  }
-}
-
-.el__inner {
-  transition-delay: $initDelayStep * $i;
-}
-
-.el__bg {
-  transform: translate3d($elW * $i * -1,0,0);
-
-  &:before {
-    transition-delay: 0.1s * $i;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-#{$i + 3}.jpg');
-  }
-}
-}
-}
-
-&:hover {
-
-.el__bg:after {
-opacity: 0;
-}
-}
-
-&.s--active {
-z-index: 1;
-width: 100%;
-transform: translate3d(0,0,0);
-transition: transform $moveAT, width $expandAT $moveAT + $expandDelay, z-index 0s;
-
-.el__bg {
-transform: translate3d(0,0,0);
-transition: transform $moveAT;
-
-&:before {
-  transition-delay: $moveAT;
-  transform: scale(1.1);
-}
-}
-}
-}
-/*********************************************************************************/
-/* Begin Footer.css                                                              */
-/*********************************************************************************/
-.footer-container{
-  background-color: #ed1b24;
-  padding-bottom: 3%;
-}
-.email,.phone,.loc{
-  max-width: 3%;
-  float: left;
-  margin-right: 2%;
-  border-radius: 100%;
-  border: 2px solid white;
-}
-
-.location{
-  margin-left: 30%;
-}
-.phoneNum{
-  margin-left: 30%;
-}
-.emailAddress{
-  margin-left: 30%;
-}
-.building{
-  margin-left: 30%;
-  margin-top: -100%;
-  transform: scale(1.5)
-}   
-.h1{
-  width: 13%;
-  margin-left: 30%;    
-  padding-top: 2%;
-  color: white;
-  border-bottom: 2px solid white;
-}
-/*********************************************************************************/
-/* Begin Timeline.css                                                            */
-/*********************************************************************************/
-
-.timeline-grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px 0;
-  grid-auto-rows: minmax(50px, auto);
-  margin-left: 15%;
-  margin-top: -30%;
-}
-.one{
-  grid-column: 1;
-  grid-row: 1;
-}
-.two{
-  grid-column: 1;
-  grid-row: 2;
-}
-.three{
-  grid-column: 1;
-  grid-row: 3;
-}
-.four{
-  grid-column: 1;
-  grid-row: 4;
-}
-.five{
-  grid-column: 2;
-  grid-row: 1;
-}
-.six{
-  grid-column: 2;
-  grid-row: 2;
-}
-.seven{
-  grid-column: 2;
-  grid-row: 3;
-}
-.eight{
-  grid-column: 2;
-  grid-row: 4;
-}
-.nine{
-  grid-column: 2;
-  grid-row: 5;
-}
-.nine h1{
-  color: red;
-}
-.oneImg{
-  max-width: 20%;
-  margin-left: 45%;
-  margin-bottom: -8%;
-}
-.threeImg{
-  max-width: 35%;
-  margin-left: 30%;
-  margin-bottom: -10%;
-}
-.eightImg{
-  max-width: 25%;
-  margin-left: 40%;
-  margin-bottom: -9.2%;
-  margin-top: -10%;
-}
-/*********************************************************************************/
-/* Begin TimelinePiece.css                                                       */
-/*********************************************************************************/
-.text{
-  border-top: 2px solid red;
-  width: 61%;
-  margin-top: -5%;
-}
-.year{
-  margin-left: 0%;
-  color: grey;
-}
-.card{
-  margin-left: 10%;
-}
-/*********************************************************************************/
-/* Begin TopNav.css                                                              */
-/*********************************************************************************/
-.TopNavContainer{
-  background-color: #ed1b24;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1em;
-  z-index: 1;
-}
-.TopNav ul{
-  display: flex;
-      list-style: none;
-      gap: 15vw;
-}
-.TopNav ul li a{
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  width: 20%;
-}
-.TopNav ul li a:hover{
-  color: black;
-}
+*/
