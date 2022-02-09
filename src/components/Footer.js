@@ -13,9 +13,9 @@ function Footer() {
                         <h5 className="text-uppercase">CONTACT INFO</h5>
                         <ul className="list-unstyled">
 
-                            <li class="text-white"><img className="loc" src={loc} /> 7700 Chad Colley Blvd</li>
-                            <li class="text-white"><img className="phone" src={phone} />Phone: (479) 646-4210 Extension: 7</li>
-                            <li class="text-white"><img className="email" src={email} />service@umarexusa.com</li>
+                            <li className="text-white"><img className="loc" src={loc} /> 7700 Chad Colley Blvd</li>
+                            <li className="text-white"><img className="phone" src={phone} />Phone: (479) 646-4210 Extension: 7</li>
+                            <li className="text-white"><img className="email" src={email} />service@umarexusa.com</li>
                         </ul>
                     </div>
 

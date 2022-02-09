@@ -1,141 +1,87 @@
 import React from "react";
-import ux from "../assets/UX Airguns Logo Mark_3Color.png";
 
 function Carousel() {
 	return (
-		<div class="cont s--inactive">
-			<div class="cont__inner">
-				<div class="el">
-					<div class="el__overflow">
-						<div class="el__inner">
-							<div class="el__bg"></div>
-							<div class="el__preview-cont">
-								<h2 class="el__heading"></h2>
-							</div>
-							<div class="el__content">
-								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
-								<div class="el__close-btn"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="el">
-					<div class="el__overflow">
-						<div class="el__inner">
-							<div class="el__bg"></div>
-							<div class="el__preview-cont">
-								<h2 class="el__heading"></h2>
-							</div>
-							<div class="el__content">
-								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
-								<div class="el__close-btn"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="el">
-					<div class="el__overflow">
-						<div class="el__inner">
-							<div class="el__bg"></div>
-							<div class="el__preview-cont">
-								<h2 class="el__heading"></h2>
-							</div>
-							<div class="el__content">
-								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
-								<div class="el__close-btn"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="el">
-					<div class="el__overflow">
-						<div class="el__inner">
-							<div class="el__bg"></div>
-							<div class="el__preview-cont">
-								<h2 class="el__heading"></h2>
-							</div>
-							<div class="el__content">
-								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
-								<div class="el__close-btn"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="el">
-					<div class="el__overflow">
-						<div class="el__inner">
-							<div class="el__bg"></div>
-							<div class="el__preview-cont">
-								<h2 class="el__heading"></h2>
-							</div>
-							<div class="el__content">
-								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
-								<div class="el__close-btn"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="el">
-					<div class="el__overflow">
-						<div class="el__inner">
-							<div class="el__bg"></div>
-							<div class="el__preview-cont">
-								<h2 class="el__heading"></h2>
-							</div>
-							<div class="el__content">
-								<img className="ux" src={ux} />
-								<div class="el__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend est in purus elementum tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eu nisl tempor urna egestas scelerisque. Integer iaculis nulla felis. Pellentesque luctus tortor vel ligula malesuada, sed dapibus tortor congue. Integer eget lectus maximus, venenatis nulla nec, molestie magna. Vivamus ornare erat sed elit interdum auctor.<p><button className="airgunStore">Umarex Airgun Store</button></p></div>
-								<div class="el__close-btn"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div className='carousel-container'>
+		<ul className="c-accordion">
+		  <li id="umarex" className="c-accordion__item">
+			<a href="#joker" className="c-accordion__action">
+			  <div className="c-accordion__content">
+				<h2 className="c-accordion__title c-accordion__title--hero c-accordion__title--hover-show">Umarex</h2>
+				<p className="c-accordion__description">Few brands are owned by family owned companies anymore, but that's not the case here. We are family owned. Our owners believe in family values and encourage us to provide you, our customer, with the recreational products you, your family and friends can use to enjoy and experience the wild outdoors. Check out our vast offering: Axeon Optics, Umarex Airguns, Elite Force Airsoft, Rekt Dart Launchers, & T4E Training.</p>
+			  </div>
+			  <div className="c-accordion__aside">
+				<h2 className="c-accordion__title c-accordion__title--hover-hide">Umarex</h2>
+			  </div>
+			</a>
+		  </li>
+		  <li id="axeon" className="c-accordion__item">
+			<a href="#john-wick" className="c-accordion__action">
+			  <div className="c-accordion__content">
+				<h2 className="c-accordion__title c-accordion__title--hero c-accordion__title--hover-show">Axeon Optics</h2>
+				<p className="c-accordion__description">
+				Few brands are owned by family owned companies anymore, but that's not the case here. We are family owned. Our owners believe in family values and encourage us to provide you, our customer, with the recreational products you, your family and friends can use to enjoy and experience the wild outdoors. Check out our vast offering: Axeon Optics, Umarex Airguns, Elite Force Airsoft, Rekt Dart Launchers, & T4E Training.
+				</p>
+			  </div>
+			  <div className="c-accordion__aside">
+				<h2 className="c-accordion__title c-accordion__title--hover-hide">Axeon Optics</h2>
+			  </div>
+			</a>
+		  </li>
+		  <li id="elite-force" className="c-accordion__item">
+			<a href="#black-panther" className="c-accordion__action">
+			  <div className="c-accordion__content">
+				<h2 className="c-accordion__title c-accordion__title--hero c-accordion__title--hover-show">Elite Force</h2>
+				<p className="c-accordion__description">
+				Few brands are owned by family owned companies anymore, but that's not the case here. We are family owned. Our owners believe in family values and encourage us to provide you, our customer, with the recreational products you, your family and friends can use to enjoy and experience the wild outdoors. Check out our vast offering: Axeon Optics, Umarex Airguns, Elite Force Airsoft, Rekt Dart Launchers, & T4E Training.
+				</p>
+			  </div>
+			  <div className="c-accordion__aside">
+				<h2 className="c-accordion__title c-accordion__title--hover-hide">Elite Force</h2>
+			  </div>
+			</a>
+		  </li>
+		  <li id="rekt" className="c-accordion__item">
+			<a href="#marvel-captain" className="c-accordion__action">
+			  <div className="c-accordion__content">
+				<h2 className="c-accordion__title c-accordion__title--hero c-accordion__title--hover-show">REKT</h2>
+				<p className="c-accordion__description">
+				Few brands are owned by family owned companies anymore, but that's not the case here. We are family owned. Our owners believe in family values and encourage us to provide you, our customer, with the recreational products you, your family and friends can use to enjoy and experience the wild outdoors. Check out our vast offering: Axeon Optics, Umarex Airguns, Elite Force Airsoft, Rekt Dart Launchers, & T4E Training.
+				</p>
+			  </div>
+			  <div className="c-accordion__aside">
+				<h2 className="c-accordion__title c-accordion__title--hover-hide">REKT</h2>
+			  </div>
+			</a>
+		  </li>
+		  <li id="p2p" className="c-accordion__item">
+			<a href="#marvel-captain" className="c-accordion__action">
+			  <div className="c-accordion__content">
+				<h2 className="c-accordion__title c-accordion__title--hero c-accordion__title--hover-show">P2P</h2>
+				<p className="c-accordion__description">
+				Few brands are owned by family owned companies anymore, but that's not the case here. We are family owned. Our owners believe in family values and encourage us to provide you, our customer, with the recreational products you, your family and friends can use to enjoy and experience the wild outdoors. Check out our vast offering: Axeon Optics, Umarex Airguns, Elite Force Airsoft, Rekt Dart Launchers, & T4E Training.
+				</p>
+			  </div>
+			  <div className="c-accordion__aside">
+				<h2 className="c-accordion__title c-accordion__title--hover-hide">P2P</h2>
+			  </div>
+			</a>
+		  </li>
+		  <li id="t4e" className="c-accordion__item">
+			<a href="#marvel-captain" className="c-accordion__action">
+			  <div className="c-accordion__content">
+				<h2 className="c-accordion__title c-accordion__title--hero c-accordion__title--hover-show">T4E</h2>
+				<p className="c-accordion__description">
+				Few brands are owned by family owned companies anymore, but that's not the case here. We are family owned. Our owners believe in family values and encourage us to provide you, our customer, with the recreational products you, your family and friends can use to enjoy and experience the wild outdoors. Check out our vast offering: Axeon Optics, Umarex Airguns, Elite Force Airsoft, Rekt Dart Launchers, & T4E Training.
+				</p>
+			  </div>
+			  <div className="c-accordion__aside">
+				<h2 className="c-accordion__title c-accordion__title--hover-hide">T4E</h2>
+			  </div>
+			</a>
+		  </li>
+		</ul>
 		</div>
-		/*<div class="flex-container">
-			<div class="spinner"><p>
-				<div class="cube1"></div>
-				<div class="cube2"></div>
-			</p>
-			</div>
-			<div class="flex-slide home">
-				<img className="airguns" src={ux} />
-				<div class="flex-title flex-title-home"></div>
-				<div class="flex-about flex-about-home"><p>Click here to navigate to the home section of the website</p></div>
-			</div>
-			<div class="flex-slide about">
-				<div class="flex-title"></div>
-				<div class="flex-about"><p>Click here to navigate to the About section of the website</p></div>
-			</div>
-			<div class="flex-slide work">
-				<div class="flex-title"></div>
-				<div class="flex-about"><p>Listing relevant snippets of work:</p>
-				</div>
-			</div>
-			<div class="flex-slide contact">
-				<div class="flex-title"></div>
-				<div class="flex-about">
-					<p>Use the contact form below</p>
-				</div>
-			</div>
-			<div class="flex-slide fifth">
-				<div class="flex-title"></div>
-				<div class="flex-about">
-					<p>Use the contact form below</p>
-				</div>
-			</div>
-			<div class="flex-slide sixth">
-				<div class="flex-title"></div>
-				<div class="flex-about">
-					<p>Use the contact form below</p>
-				</div>
-			</div>
-		</div>*/
 	)
 }
 

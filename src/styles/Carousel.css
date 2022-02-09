@@ -1,0 +1,28 @@
+.carousel-container {
+    height: 24rem;
+    margin: 1rem 0;
+}
+#umarex {
+    background-image: url('/src/assets/background3.jpg');
+    background-size: cover;
+  }
+  #axeon {
+    background-image: url('/src/assets/background4.jpg');
+    background-size: cover;
+  }
+  #elite-force {
+    background-image: url('/src/assets/background5.jpg');
+    background-size: cover;
+  }
+  #rekt {
+    background-image: url('/src/assets/background7.jpg');
+    background-size: cover;
+  }
+  #p2p {
+    background-image: url('/src/assets/background6.jpg');
+    background-size: cover;
+  }
+  #t4e {
+    background-image: url('/src/assets/background8.jpg');
+    background-size: cover;
+  }
