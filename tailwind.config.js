@@ -1,7 +1,14 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,tx,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      maxHeight: {
+        '200': '200px',
+      }
+    },
   },
   plugins: [],
 }
